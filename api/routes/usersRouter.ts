@@ -9,6 +9,7 @@ import {
     saveSessionId,
     updateUserStatus,
 } from '../db/usersDb';
+import { validateNotBlocked } from '../validators/generalValidators';
 import {
     User,
     UserSignupParams,
@@ -103,8 +104,8 @@ function getActionHandler(status: string | null) {
             if (toBeEdited.length === 0) {
                 res.sendStatus(400);
             }
-            toBeEdited.forEach((id: string) => {
-                updateUserStatus(id, status);
+            toBeEdited.forEach(async (id: string) => {
+                await updateUserStatus(id, status);
             });
             res.sendStatus(200);
         } else {
@@ -134,8 +135,5 @@ usersRouter.get('/', async (req, res) => {
         res.send(JSON.stringify(await getUsers()));
         return;
     }
-    // TODO: REMOVE THIS
-    //res.send(JSON.stringify(await getUsers()));
-    // TODO: REMOVE THIS
     res.sendStatus(401);
 });
