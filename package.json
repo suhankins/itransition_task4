@@ -1,5 +1,5 @@
 {
-    "name": "itransition task4",
+    "name": "itransitiontask4",
     "type": "module",
     "scripts": {
 		"install": "cd client && npm install && cd ../api && npm install",
