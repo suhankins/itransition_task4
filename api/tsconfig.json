@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+    /* Projects */
+        /* Language and Environment */
+        "target": "ESNext",
+        /* Modules */
+        "module": "Node16",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        /* Type Checking */
+        "strict": true,
+        "skipLibCheck": true,
+        "outDir": "./built/"
+    }
+}

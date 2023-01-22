@@ -1,0 +1,57 @@
+article div:nth-child(2) {
+    display: none;
+    position: relative;
+    background-color: #374956;
+    background-image: url("/img/Tara_jezero_Djurici.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+form > small {
+    color: var(--form-element-invalid-border-color);
+}
+
+.serbia::after {
+    content: "And enjoy your experience on mobile";
+}
+
+@media (min-width: 992px) {
+    .serbia::after {
+        content: "And check out this cool picture from Serbia";
+    }
+    .grid > div:nth-child(2) {
+        display: block;
+    }
+}
+
+.delete {
+    background-color: red;
+    border-color: red;
+}
+
+.block {
+    background-color: crimson;
+    border-color: crimson;
+}
+
+.unblock {
+    background-color: limegreen;
+    border-color: limegreen;
+}
+
+.logout {
+    float: right;
+}
+
+.action {
+    width: auto;
+    margin-right: 1rem;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.inline > * {
+    display: inline-block;
+}
