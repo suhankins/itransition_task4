@@ -1,14 +1,17 @@
 # itransition task 4
 
 ## How to build
-1. Enter client folder
-2. Run "npm run build"
-3. Copy dist folder to api folder
-4. Enter api folder
-5. Run "npm run dev"
+1. npm install
+2. npm run build
+
+## How to run
+npm start
 
 ## Expected values in .env file
 - SESSIONSECRET
+
+- CONNECTION_STRING
+or
 - PGUSER
 - PGPASSWORD
 - PGPORT
