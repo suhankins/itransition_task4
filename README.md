@@ -10,8 +10,11 @@ npm start
 ## Expected values in .env file
 - SESSIONSECRET
 
+
 - CONNECTION_STRING
+
 or
+
 - PGUSER
 - PGPASSWORD
 - PGPORT
