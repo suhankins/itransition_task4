@@ -16,8 +16,6 @@ api/built
 dist-ssr
 *.local
 
-public
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
