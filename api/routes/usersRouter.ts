@@ -105,7 +105,7 @@ function getActionHandler(status: string | null) {
                 res.sendStatus(400);
             }
             for (const id in toBeEdited) {
-                await updateUserStatus(id, status);
+                await updateUserStatus(toBeEdited[id], status);
             }
             res.sendStatus(200);
         } else {
