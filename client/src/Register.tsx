@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEventHandler, useState } from 'react';
+import { FormEventHandler, useState } from 'react';
 import { getChangeHandler, getSubmitHandler } from './FormHandlers';
 
 /**
