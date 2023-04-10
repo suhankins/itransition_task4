@@ -2,8 +2,11 @@
     "name": "itransitiontask4",
     "type": "module",
     "scripts": {
-		"install": "cd client && npm install && cd ../api && npm install",
         "build": "cd client && npm run build && cd ../api && npm run build",
-		"start": "cd api && npm start"
-    }
+        "start": "cd api && npm start"
+    },
+    "workspaces": [
+        "client",
+        "api"
+    ]
 }
